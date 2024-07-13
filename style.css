@@ -31,7 +31,7 @@
     display: flex;
     justify-content: center;
     position: fixed;
-    bottom: 5%;
+    bottom: 2%;
     width: 100%;
 }
 
@@ -102,7 +102,7 @@
         width: 50px;
     }
     .nav-container.active{
-        width: 80%;
+        width: 90%;
 
     }
     .link{
