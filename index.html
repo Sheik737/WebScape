@@ -7,7 +7,52 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <style>
+        .testimonial-container {
+            width: 90%;
+            margin: 0px auto;
+            display: grid;
+            gap: 72px;
+        }
 
+        .testimonial-container .head {
+            display: grid;
+            gap: 16px;
+        }
+
+        .testimonial-container .head p {
+            width: 30%;
+        }
+
+        .testimonials {
+            display: flex;
+
+            gap: 40px;
+            overflow: hidden;
+        }
+
+        .testimonial {
+            width: 45%;
+            min-height: 300px;
+            background-color: rgb(171, 171, 171);
+            flex-shrink: 0;
+            border-radius: 20px;
+            /* transform: translateX(-200%); to reach the end testimonial*/
+        }
+
+        @media screen and (max-width:768px) {
+            .testimonials {
+                flex-direction: column;
+            }
+
+            .testimonial {
+                width: 100%;
+                min-height: 300px;
+                background-color: rgb(171, 171, 171);
+                flex-shrink: 0;
+                border-radius: 20px;
+                /* transform: translateX(-200%); to reach the end testimonial*/
+            }
+        }
     </style>
 </head>
 
@@ -60,23 +105,25 @@
             </div>
         </div>
         <!-- about section -->
-         <div class="about-section">
+        <div class="about-section">
             <div class="about">
                 <div class="body">
                     <div class="head">
                         <h4>About us</h4>
                         <h2>A team of passionate designers <br> and developers</h2>
                     </div>
-                    <p>Webscape is a full-service web design agency dedicated to delivering innovative and effective web solutions. With years of experience and a deep understanding of the latest technologies, our team is committed to creating websites that not only look great but also drive results.</p>
+                    <p>Webscape is a full-service web design agency dedicated to delivering innovative and effective web
+                        solutions. With years of experience and a deep understanding of the latest technologies, our
+                        team is committed to creating websites that not only look great but also drive results.</p>
                     <a href=""><button>Contact Us</button></a>
                 </div>
                 <div class="img-container">
                     <img src="Vertical img.jpg" alt="">
                 </div>
             </div>
-         </div>
-         <!-- service section -->
-          <div class="service-section">
+        </div>
+        <!-- service section -->
+        <div class="service-section">
             <div class="service-container">
                 <div class="head">
                     <h4>Our Services</h4>
@@ -101,7 +148,32 @@
                     </div>
                 </div>
             </div>
-          </div>
+        </div>
+        <!-- Testimonials section -->
+        <div class="testimonials-section">
+            <div class="testimonial-container">
+                <div class="head">
+                    <h2>What Our Clients Say</h2>
+                    <p>Don’t just take our word for it. Here’s what some of our satisfied clients have to say about
+                        their
+                        experience</p>
+                </div>
+                <div class="testimonials">
+                    <div class="testimonial">
+                        1
+                    </div>
+                    <div class="testimonial">
+                        2
+                    </div>
+                    <div class="testimonial">
+                        3
+                    </div>
+                    <div class="testimonial">
+                        4
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 
