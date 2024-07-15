@@ -9,7 +9,7 @@
 }
 
 .bodyContainer {
-    padding-top: 96px;
+    padding: 96px 0px;
     display: grid;
     gap: 128px;
 }
@@ -47,6 +47,7 @@
     padding: 12px 32px;
     border-radius: 12px;
     flex-direction: column;
+    background-color: white;
 }
 
 .links {
@@ -236,6 +237,9 @@
     .service-container .services .main .service img{
         height: 40vh;
     }
+    footer .social-links {
+        justify-content: center
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -250,14 +254,14 @@
 
     }
 
-    .link {
+    .nav-container .link {
         opacity: 0;
 
         transition: .3s ease;
         transition-delay: .1s;
     }
 
-    .link.active {
+    .nav-container .link.active {
         opacity: 1;
     }
 
@@ -265,7 +269,7 @@
         display: block;
     }
 
-    .links {
+    .nav-container .links {
         flex-direction: column;
         align-items: center;
         height: 0px;
@@ -307,6 +311,57 @@
         width: 100%;
         /* transform: translateX(-200%); to reach the end testimonial*/
         height: 40vh;
+    }
+    /* footer  */
+    footer {
+        background-color: black;
+        color: white;
+        padding: 64px;
+        display: grid;
+        gap: 72px;
+        text-align: center;
+    }
+
+    .footer-container {
+        display: grid;
+        gap: 96px;
+    }
+
+    .footer-container .links {
+        margin: 0px auto;
+        display: flex;
+        gap: 48px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer-container .Contact {
+        margin: 0px auto;
+        display: flex;
+        gap: 72px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    footer .social-links {
+        display: flex;
+        justify-content: space-between;
+        border-top: 2px solid white;
+        padding-top: 16px;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    footer .social-media {
+        display: flex;
+        gap: 40px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    footer .social-links{
+        justify-content: center;
     }
 }
 
