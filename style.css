@@ -276,7 +276,47 @@
 .process .steps .step:last-child {
     border-bottom: 3px solid black;
 }
+/* FAQ  */
+.FAQ{
+    width: 80%;
+    margin: 0px auto;
+    display: grid;
+    gap: 96px;
+}
+.FAQ .head{
+    text-align: center;
+}
+.faqs{
+    display: grid;
+    gap: 64px;
+}
+.faq{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(153, 153, 153);
+    border-radius: 20px;
+}
 
+/* CTA  */
+.CTA {
+    max-width: 80%;
+    margin: 0px auto;
+    background-color: black;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 128px 72px;
+    flex-wrap: wrap;
+    border-radius: 24px;
+    gap: 32px;
+}
+
+.CTA form {
+    display: grid;
+    gap: 20px;
+    justify-items: start;
+}
 /* footer section  */
 footer {
     background-color: black;
@@ -336,26 +376,7 @@ footer .social-media {
     flex-wrap: wrap;
     justify-content: center;
 }
-/* FAQ  */
-.FAQ{
-    width: 80%;
-    margin: 0px auto;
-    display: grid;
-    gap: 96px;
-}
-.FAQ .head{
-    text-align: center;
-}
-.faqs{
-    display: grid;
-    gap: 64px;
-}
-.faq{
-    width: 100%;
-    height: 70px;
-    background-color: rgb(153, 153, 153);
-    border-radius: 20px;
-}
+
 
 @media screen and (max-width:960px) {
     .service-container .services .main {
@@ -492,5 +513,9 @@ footer .social-media {
 
     .testimonial-container .head p {
         width: 85%;
+    }
+    .CTA {
+        justify-content: flex-start;
+        padding: 72px 24px;
     }
 }
