@@ -7,11 +7,30 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <style>
+        .CTA {
+            max-width: 80%;
+            margin: 0px auto;
+            background-color: black;
+            color: #ffffff;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 128px 72px;
+            flex-wrap: wrap;
+            border-radius: 24px;
+            gap: 32px;
+        }
+
+        .CTA form {
+            display: grid;
+            gap: 20px;
+            justify-items: start;
+        }
 
         @media screen and (max-width:768px) {
-
-
- 
+            .CTA {
+                justify-content: flex-start;
+            }
         }
     </style>
 </head>
@@ -134,7 +153,60 @@
                 </div>
             </div>
         </div>
+        <!-- Process Section -->
+        <div class="process-section">
+            <div class="process">
+                <div class="head">
+                    <h2>Our <span>4D</span> Process</h2>
+                    <p>We believe that a well-defined process is key to delivering exceptional web design solutions. Our
+                        process ensures that we understand your needs, create a tailored strategy, and execute it
+                        flawlessly. Here’s how we do it:</p>
+                </div>
+                <div class="steps">
+                    <div class="step">
+                        <h3>Discuss</h3>
+                    </div>
+                    <div class="step">
+                        <h3>Design</h3>
+                    </div>
+                    <div class="step">
+                        <h3>Develop</h3>
+                    </div>
+                    <div class="step">
+                        <h3>Deploy</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FAQ -->
+        <div class="FAQ-section">
+            <div class="FAQ">
+                <div class="head">
+                    <h2>Frequently Asked Questions</h2>
+                </div>
+                <div class="faqs">
+                    <div class="faq"></div>
+                    <div class="faq"></div>
+                    <div class="faq"></div>
+                    <div class="faq"></div>
+                    <div class="faq"></div>
+                    <div class="faq"></div>
+                    <div class="faq"></div>
+                </div>
+            </div>
+        </div>
+        <!-- CTS section  -->
+        <div class="CTA-section">
+            <div class="CTA">
+                <h1>Lets start a Project now</h1>
+                <form action="">
+                    <input type="email">
+                    <button type="submit">Send me</button>
+                </form>
+            </div>
+        </div>
     </div>
+
     <!-- footer section -->
     <footer>
         <div class="footer-container">
@@ -153,9 +225,11 @@
                 <p>zsheik436@gmail.com</p>
             </div>
             <div class="cta">
-                <h1>Lets start a Project now                 <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 15 15">
-                    <path fill="currentColor"
-                        d="M8.293 2.293a1 1 0 0 1 1.414 0l4.5 4.5a1 1 0 0 1 0 1.414l-4.5 4.5a1 1 0 0 1-1.414-1.414L11 8.5H1.5a1 1 0 0 1 0-2H11L8.293 3.707a1 1 0 0 1 0-1.414" /> </svg></h1>
+                <h1>Lets start a Project now <span><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                            viewBox="0 0 15 15">
+                            <path fill="currentColor"
+                                d="M8.293 2.293a1 1 0 0 1 1.414 0l4.5 4.5a1 1 0 0 1 0 1.414l-4.5 4.5a1 1 0 0 1-1.414-1.414L11 8.5H1.5a1 1 0 0 1 0-2H11L8.293 3.707a1 1 0 0 1 0-1.414" />
+                        </svg></span> </h1>
             </div>
         </div>
         <div class="social-links">

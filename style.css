@@ -162,41 +162,49 @@
 
 .about .img-container img {
     width: 100%;
-    
+
 }
+
 /* service section  */
-.service-container{
+.service-container {
     width: 90%;
     margin: 0px auto;
     display: grid;
     gap: 40px;
 }
-.service-container .head{
+
+.service-container .head {
     display: grid;
     gap: 20px;
 }
-.service-container .services{
+
+.service-container .services {
     display: grid;
     gap: 40px;
 }
-.service-container .services .main{
+
+.service-container .services .main {
     display: flex;
     height: 400px;
     gap: 40px;
 }
-.service-container .services .main .service{
+
+.service-container .services .main .service {
     flex: 1;
     transition: .3s ease;
 }
-.service-container .services .main .service:hover{
+
+.service-container .services .main .service:hover {
     flex: 1.9;
 }
-.service-container .services .main .service img{
+
+.service-container .services .main .service img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 20px;
 }
+
 /* testimonial section  */
 .testimonial-container {
     width: 90%;
@@ -229,17 +237,161 @@
     border-radius: 20px;
     /* transform: translateX(-200%); to reach the end testimonial*/
 }
-@media screen and (max-width:960px){
-    .service-container .services .main{
+/* Our Process */
+.process {
+    width: 90%;
+    margin: 0px auto;
+    display: grid;
+    gap: 64px;
+}
+
+.process .head {
+    display: grid;
+    gap: 40px;
+}
+
+.process .head p {
+    width: 60%;
+}
+.process .steps{
+    display: grid;
+}
+.process .steps .step {
+    border-top: 3px solid black;
+    display: grid;
+    height: 100px;
+    transition-delay: 0.2s;
+    transition: 0.5s ease;
+    align-content: end;
+    padding-bottom: 30px;
+}
+.process .steps .step:hover{
+    height: 30vh;
+    background-image: url(Horizontal\ img.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+    
+}
+
+.process .steps .step:last-child {
+    border-bottom: 3px solid black;
+}
+
+/* footer section  */
+footer {
+    background-color: black;
+    color: white;
+    padding: 64px;
+    display: grid;
+    gap: 72px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.footer-container {
+    display: grid;
+    gap: 96px;
+    width: 90%;
+    margin: 0px auto;
+}
+
+.footer-container .links {
+    margin: 0px auto;
+    display: flex;
+    gap: 48px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.footer-container .cta span{
+    position: relative;
+    margin-left: 10px;
+}
+.footer-container .cta span svg{
+    position: absolute;
+    top: 12.5%;
+    rotate: -45deg;
+    
+}
+.footer-container .Contact {
+    margin: 0px auto;
+    display: flex;
+    gap: 72px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer .social-links {
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid white;
+    padding-top: 16px;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+footer .social-media {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* FAQ  */
+.FAQ{
+    width: 80%;
+    margin: 0px auto;
+    display: grid;
+    gap: 96px;
+}
+.FAQ .head{
+    text-align: center;
+}
+.faqs{
+    display: grid;
+    gap: 64px;
+}
+.faq{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(153, 153, 153);
+    border-radius: 20px;
+}
+
+@media screen and (max-width:960px) {
+    .service-container .services .main {
         flex-direction: column;
         height: auto;
     }
-    .service-container .services .main .service img{
+
+    .service-container .services .main .service img {
         height: 40vh;
     }
+    .process .steps{
+        gap: 32px;
+    }
+    .process .steps .step:last-child {
+        border-bottom: none;
+    }
+    .process .steps .step {
+        height: 300px;
+        background-image: url(Horizontal\ img.jpg);
+        background-position: 50% 50%;
+        background-size: cover;
+        border: none;
+
+    }
+    .process .steps .step:hover {
+        height: 300px;
+        background-image: url(Horizontal\ img.jpg);
+        background-position: 50% 50%;
+        background-size: cover;
+
+    }
+
     footer .social-links {
         justify-content: center
     }
+
 }
 
 @media screen and (max-width:768px) {
@@ -292,17 +444,21 @@
         width: 90%;
         margin: 16px auto;
     }
+
     .about .img-container {
         width: 100%;
-        
+
     }
+
     .about img {
         height: 60vh;
     }
+
     /* testimonial section  */
-    .testimonial-container .head p{
+    .testimonial-container .head p {
         width: 60%;
     }
+
     .testimonials {
         flex-direction: column;
     }
@@ -312,55 +468,19 @@
         /* transform: translateX(-200%); to reach the end testimonial*/
         height: 40vh;
     }
+
+    /* Our Process  */
+    .process .head p {
+        width: 100%;
+    }
+
+    /* FAQ  */
+    .FAQ{
+        width: 95%;
+    }
+
     /* footer  */
-    footer {
-        background-color: black;
-        color: white;
-        padding: 64px;
-        display: grid;
-        gap: 72px;
-        text-align: center;
-    }
-
-    .footer-container {
-        display: grid;
-        gap: 96px;
-    }
-
-    .footer-container .links {
-        margin: 0px auto;
-        display: flex;
-        gap: 48px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .footer-container .Contact {
-        margin: 0px auto;
-        display: flex;
-        gap: 72px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
     footer .social-links {
-        display: flex;
-        justify-content: space-between;
-        border-top: 2px solid white;
-        padding-top: 16px;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 40px;
-    }
-
-    footer .social-media {
-        display: flex;
-        gap: 40px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    footer .social-links{
         justify-content: center;
     }
 }
@@ -369,7 +489,8 @@
     .hero .body p {
         width: 100%;
     }
-    .testimonial-container .head p{
+
+    .testimonial-container .head p {
         width: 85%;
     }
 }
