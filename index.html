@@ -7,6 +7,46 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <style>
+        .faq{
+            border-top: 3px solid rgb(37, 37, 37);
+            padding-top: 20px;
+        }
+        .faq .question{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .faq .answer{
+            height: 0px;
+            margin-top: 16px;
+            overflow: hidden;  
+            transition: .3s ease; 
+            width: 75%;
+        }
+        .faq .answer.active{
+            height: 5rem;
+        }
+        .answerToggle {
+            width: 24px;
+            height: 24px;
+            position: relative;
+        }
+        .answerToggle span{
+            height: 3px;
+            width: 100%;
+            background-color: var(--black);
+            border-radius: 25px;
+            position: absolute;
+            transition: .3s ease;
+            top:50%;
+        }
+        .answerToggle span:first-child{
+            rotate: 90deg;
+        }
+        .answerToggle.active span:first-child{
+            rotate: 0deg;
+        }
+
         @media screen and (max-width:768px) {}
     </style>
 </head>
@@ -162,13 +202,92 @@
                     <h2>Frequently Asked Questions</h2>
                 </div>
                 <div class="faqs">
-                    <div class="faq"></div>
-                    <div class="faq"></div>
-                    <div class="faq"></div>
-                    <div class="faq"></div>
-                    <div class="faq"></div>
-                    <div class="faq"></div>
-                    <div class="faq"></div>
+                    <div class="faq">
+                        <div class="question">
+                            <h3>What services does your web agency offer?</h3>
+                            <div class="answerToggle">
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="answer">
+                            <p>We offer web design, web development, SEO, digital marketing, branding, and UI/UX design
+                                services to help your business grow online.</p>
+                        </div>      
+                    </div>
+                    <div class="faq">
+                        <div class="question">
+                            <h3>How long does it take to build a website?</h3>
+                            <div class="answerToggle">
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="answer">
+                            <p>The timeline varies based on project complexity. Typically, a standard website takes 4-6 weeks, while more complex sites can take 8-12 weeks or longer.</p>
+                        </div>      
+                    </div>
+                    <div class="faq">
+                        <div class="question">
+                            <h3>What is the cost of a website?</h3>
+                            <div class="answerToggle">
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="answer">
+                            <p>Website costs vary depending on features and complexity. We provide customized quotes after discussing your specific needs and requirements.</p>
+                        </div>      
+                    </div>
+                    <div class="faq">
+                        <div class="question">
+                            <h3>What services does your web agency offer?</h3>
+                            <div class="answerToggle">
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="answer">
+                            <p>We offer web design, web development, SEO, digital marketing, branding, and UI/UX design
+                                services to help your business grow online.</p>
+                        </div>      
+                    </div>
+                    <div class="faq">
+                        <div class="question">
+                            <h3>Do you offer website maintenance and support?</h3>
+                            <div class="answerToggle">
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="answer">
+                            <p>Yes, we offer ongoing maintenance and support plans to ensure your website remains updated, secure, and functioning smoothly.</p>
+                        </div>      
+                    </div>
+                    <div class="faq">
+                        <div class="question">
+                            <h3>Can you help with website redesigns?</h3>
+                            <div class="answerToggle">
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="answer">
+                            <p>Absolutely! We specialize in redesigning websites to improve functionality, aesthetics, and user experience while aligning with your brand.</p>
+                        </div>      
+                    </div>
+                    <div class="faq">
+                        <div class="question">
+                            <h3>Will my website be mobile-friendly?</h3>
+                            <div class="answerToggle">
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="answer">
+                            <p>Yes, all our websites are designed to be responsive and mobile-friendly, ensuring they work seamlessly on all devices.</p>
+                        </div>      
+                    </div>
                 </div>
             </div>
         </div>
@@ -209,7 +328,7 @@
     <footer>
         <div class="footer-container">
             <div class="logo">
-                <svg  viewBox="0 0 55 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg viewBox="0 0 55 42" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M10.1459 1.5H4.66854C2.48426 1.5 1.0322 3.75967 1.93975 5.74648L15.942 36.4C16.9809 38.6744 20.183 38.7542 21.334 36.5344L24.7968 29.8562C25.2386 29.0041 25.246 27.9921 24.8168 27.1336L12.8292 3.15836C12.321 2.14201 11.2822 1.5 10.1459 1.5Z"
                         fill="#ffffff" stroke="black" />
