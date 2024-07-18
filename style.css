@@ -156,8 +156,9 @@ body{
 }
 
 .nav-container .links a:hover{
-    color: var(--primary-color);
-    border: 2px solid var(--primary-color);
+    color: #f9975e;
+    border: 2px solid #f9975e;
+
 }
 .nav-container .link.view{
     color: var(--primary-color);
@@ -339,9 +340,11 @@ body{
     transition: .4s ease;
 }
 .service-container .services .main .service:hover .body .desc{
-    height: 6rem;
+    height: 5rem;
     opacity: 1;
+    transition: .4s ease;
 }
+
 
 .service-container .services .main .service:hover {
     flex: 1.9;
@@ -622,9 +625,24 @@ footer .social-media {
         flex-direction: column;
         height: auto;
     }
-
+    .service-container .services .main .service:hover {
+        flex: 1;
+    }
+    .service-container .services .main .service .body{
+        margin-left: 12px;;
+    }
     .service-container .services .main .service img {
         height: 40vh;
+    }
+    .service-container .services .main .service .overlay {
+        opacity: 0.7;
+    }
+    .service-container .services .main .service .body .desc{
+        height: auto;
+        opacity: 1;
+    }
+    .service-container .services .main .service:hover .body .desc{
+        height: auto;
     }
     .process .steps{
         gap: 32px;
@@ -659,9 +677,6 @@ footer .social-media {
     .footer-container .links a:hover{
         color:var(--white);
     }
-    .nav-container .links a:hover{
-        color:var(--black);
-    }
 
 }
 
@@ -677,7 +692,6 @@ footer .social-media {
 
     }
     .nav-container .links a:hover{
-        color: var(--primary-color);
         border:none;
     }
     .nav-container .link {
@@ -686,8 +700,8 @@ footer .social-media {
         transition-delay: .1s;
     }
     .nav-container .link.view{
-        color: var(--primary-color);
         border: none;
+        color: var(--primary-color);
     }
     
     .nav-container .link.active {
@@ -787,10 +801,13 @@ footer .social-media {
 }
 
 @media screen and (max-width:600px) {
-    .hero .body p {
+    .hero .body .text {
         width: 100%;
     }
-
+    .service-container .services .main .service .body .desc{
+        height: 0px;
+        opacity: 1;
+    }
     .testimonial-container .head p {
         width: 85%;
     }

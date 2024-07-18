@@ -6,10 +6,10 @@ const ansMenu = document.querySelectorAll('.answerToggle')
 const sections = document.querySelectorAll('.section');
 const navLinks = document.querySelectorAll('.nav-container .link');
 // console.log(sections)
-const options = {
+let options = {
     root: null,
     rootMargin: '0px',
-    threshold: 0.5
+    threshold: 0.4
 };
 
 const observer = new IntersectionObserver((entries, observer) => {
