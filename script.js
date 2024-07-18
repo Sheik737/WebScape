@@ -18,9 +18,9 @@ const observer = new IntersectionObserver((entries, observer) => {
         const navLink = navLinks[index];
 
         if (entry.isIntersecting) {
-            navLink.classList.add('active');
+            navLink.classList.add('view');
         } else {
-            navLink.classList.remove('active');
+            navLink.classList.remove('view');
         }
     });
 }, options);
