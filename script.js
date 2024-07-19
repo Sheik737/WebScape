@@ -5,6 +5,25 @@ const link = document.querySelectorAll(".link");
 const ansMenu = document.querySelectorAll('.answerToggle')
 const sections = document.querySelectorAll('.section');
 const navLinks = document.querySelectorAll('.nav-container .link');
+const services = document.querySelectorAll('.service')
+const steps = document.querySelectorAll('.step')
+
+services.forEach(element => {
+    element.addEventListener('mouseenter',()=>{
+        console.log(element.childNodes[1].play())
+    })
+    element.addEventListener('mouseleave',()=>{
+        console.log(element.childNodes[1].pause())
+    })
+});
+steps.forEach(element => {
+    element.addEventListener('mouseenter',()=>{
+        console.log(element.childNodes[1].play())
+    })
+    element.addEventListener('mouseleave',()=>{
+        console.log(element.childNodes[1].pause())
+    })
+});
 // console.log(sections)
 let options = {
     root: null,
