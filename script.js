@@ -10,18 +10,18 @@ const steps = document.querySelectorAll('.step')
 
 services.forEach(element => {
     element.addEventListener('mouseenter',()=>{
-        console.log(element.childNodes[1].play())
+        element.childNodes[1].play()
     })
     element.addEventListener('mouseleave',()=>{
-        console.log(element.childNodes[1].pause())
+        element.childNodes[1].pause()
     })
 });
 steps.forEach(element => {
     element.addEventListener('mouseenter',()=>{
-        console.log(element.childNodes[1].play())
+        element.childNodes[1].play()
     })
     element.addEventListener('mouseleave',()=>{
-        console.log(element.childNodes[1].pause())
+        element.childNodes[1].pause()
     })
 });
 // console.log(sections)

@@ -7,53 +7,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        .faq {
-            border-top: 3px solid rgb(37, 37, 37);
-            padding-top: 20px;
-        }
-
-        .faq .question {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .faq .answer {
-            height: 0px;
-            margin-top: 16px;
-            overflow: hidden;
-            transition: .3s ease;
-            width: 75%;
-        }
-
-        .faq .answer.active {
-            height: 5rem;
-        }
-
-        .answerToggle {
-            width: 24px;
-            height: 24px;
-            position: relative;
-        }
-
-        .answerToggle span {
-            height: 3px;
-            width: 100%;
-            background-color: var(--black);
-            border-radius: 25px;
-            position: absolute;
-            transition: .3s ease;
-            top: 50%;
-        }
-
-        .answerToggle span:first-child {
-            rotate: 90deg;
-        }
-
-        .answerToggle.active span:first-child {
-            rotate: 0deg;
-        }
-
         @media screen and (max-width:768px) {}
     </style>
 </head>
@@ -75,7 +28,7 @@
                 <h2>Web<span>Scape</span></h2>
             </div>
             <div class="headBtn-container">
-                <a href="">
+                <a href="#section6">
                     <button class="headBtn Btn">
                         <p>Get in touch</p>
                     </button>
@@ -83,7 +36,7 @@
             </div>
         </div>
     </header>
-    <!-- navigation -->
+
 
     <div class="bodyContainer">
         <!-- hero section -->
@@ -91,13 +44,13 @@
             <div class="hero">
                 <div class="heroHead">
                     <h1>Transforming Ideas into <br>Stunning Websites</h1>
-                    <video src="1695210411-ep-1.mp4" autoplay loop></video>
+                    <video src="assets/hero.mp4" autoplay loop muted></video>
                 </div>
                 <div class="body">
                     <p class="text">We specialize in crafting visually captivating and highly functional websites
                         tailored to your
                         unique needs. Let us bring your vision to life and help you stand out in the digital world.</p>
-                    <a href="">
+                    <a href="#section6">
                         <button class="Btn">
                             <p>Contact us</p>
                         </button>
@@ -113,15 +66,15 @@
                         <h4>About us</h4>
                         <h2>A team of passionate designers and developers</h2>
                     </div>
-                    <p>Webscape is a full-service web design agency dedicated to delivering innovative and effective web
+                    <p class="text">Webscape is a full-service web design agency dedicated to delivering innovative and effective web
                         solutions. With years of experience and a deep understanding of the latest technologies, our
                         team is committed to creating websites that not only look great but also drive results.</p>
-                    <a href=""><button class="Btn">
+                    <a href="#section6"><button class="Btn">
                             <p>Contact Us</p>
                         </button></a>
                 </div>
                 <div class="img-container">
-                    <img src="Vertical img.jpg" alt="">
+                    <img src="assets/about.jpg" alt="" >
                 </div>
             </div>
         </div>
@@ -135,7 +88,8 @@
                 <div class="services">
                     <div class="main">
                         <div class="service">
-                            <video src="1695210411-ep-1.mp4"  loop ></video>
+                            <video src="assets/Web design.mp4" muted loop></video>
+                            <img src="assets/web design.jpg" alt="">
                             <div class="overlay"></div>
                             <div class="body">
                                 <h2>Web Design</h2>
@@ -147,7 +101,8 @@
                             </div>
                         </div>
                         <div class="service">
-                            <video src="1695210411-ep-1.mp4" loop></video>
+                            <video src="assets/socialmedia.mp4" muted loop></video>
+                            <img src="assets/63649-min.jpg" alt="">
                             <div class="overlay"></div>
                             <div class="body">
                                 <h2>Digital Marketing</h2>
@@ -161,19 +116,21 @@
                     </div>
                     <div class="main">
                         <div class="service">
-                            <video src="1695210411-ep-1.mp4"  loop></video>
+                            <video src="assets/UI design.mp4" muted loop></video>
+                            <img src="assets/Ui Ux.jpg" alt="">
                             <div class="overlay"></div>
                             <div class="body">
                                 <h2>UI/UX Design</h2>
                                 <div class="desc">
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi odio consectetur
+                                    <p >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi odio consectetur
                                         pariatur sed harum recusandae aliquam? In facere tempore unde adipisci quia!
                                         Minus</p>
                                 </div>
                             </div>
                         </div>
                         <div class="service">
-                            <video src="1695210411-ep-1.mp4"  loop></video>
+                            <video src="assets/Branding.mp4" muted loop></video>
+                            <img src="assets/branding.jpg" alt="">
                             <div class="overlay"></div>
                             <div class="body">
                                 <h2>Branding</h2>
@@ -193,14 +150,14 @@
             <div class="testimonial-container">
                 <div class="head">
                     <h2>What Our Clients Say</h2>
-                    <p>Don’t just take our word for it. Here’s what some of our satisfied clients have to say about
+                    <p class="text">Don’t just take our word for it. Here’s what some of our satisfied clients have to say about
                         their
                         experience</p>
                 </div>
                 <div class="testimonials">
                     <div class="testimonial">
                         <div class="head">
-                            <img src="Square img.jpg" alt="" width="72px" height="72px" style="border-radius: 100px;">
+                            <img src="assets/man-1.jpg" alt="" width="72px" height="72px" style="border-radius: 100px;">
                             <div class="title">
                                 <h3>John Anderson</h3>
                                 <h4>CEO of Anderson Real Estate</h4>
@@ -214,33 +171,45 @@
                     </div>
                     <div class="testimonial">
                         <div class="head">
-                            <img src="Square img.jpg" alt="" width="72px" height="72px" style="border-radius: 100px;">
+                            <img src="assets/man-2.jpg" alt="" width="72px" height="72px" style="border-radius: 100px;">
                             <div class="title">
                                 <h3>David Clarke</h3>
                                 <h4>Managing Director of Clarke Consulting</h4>
                             </div>
                         </div>
-                        <p>"Our consulting firm needed a professional website that could convey our expertise and attract new clients. WebScape did an exceptional job from start to finish. They took the time to understand our business goals and crafted a site that is both visually appealing and highly functional. The feedback from our clients has been overwhelmingly positive, and we've seen a noticeable uptick in engagement. I highly recommend their services."</p>
+                        <p>"Our consulting firm needed a professional website that could convey our expertise and
+                            attract new clients. WebScape did an exceptional job from start to finish. They took the
+                            time to understand our business goals and crafted a site that is both visually appealing and
+                            highly functional. The feedback from our clients has been overwhelmingly positive, and we've
+                            seen a noticeable uptick in engagement. I highly recommend their services."</p>
                     </div>
                     <div class="testimonial">
                         <div class="head">
-                            <img src="Square img.jpg" alt="" width="72px" height="72px" style="border-radius: 100px;">
+                            <img src="assets/woman-1.jpg" alt="" width="72px" height="72px" style="border-radius: 100px;">
                             <div class="title">
                                 <h3>Emily Turner</h3>
                                 <h4>Owner of Turner's Fitness Studio</h4>
                             </div>
                         </div>
-                        <p>"I wanted a website that reflected the dynamic and energetic nature of my fitness studio. WebScape nailed it! They designed a vibrant and interactive site that not only looks amazing but also makes it easy for clients to book classes and access information. Their team was responsive, creative, and a pleasure to work with. Since launching the new site, our class bookings have soared. Thank you, WebScape!</p>
+                        <p>"I wanted a website that reflected the dynamic and energetic nature of my fitness studio.
+                            WebScape nailed it! They designed a vibrant and interactive site that not only looks amazing
+                            but also makes it easy for clients to book classes and access information. Their team was
+                            responsive, creative, and a pleasure to work with. Since launching the new site, our class
+                            bookings have soared. Thank you, WebScape!</p>
                     </div>
                     <div class="testimonial">
                         <div class="head">
-                            <img src="Square img.jpg" alt="" width="72px" height="72px" style="border-radius: 100px;">
+                            <img src="assets/woman-2.jpg" alt="" width="72px" height="72px" style="border-radius: 100px;">
                             <div class="title">
                                 <h3>Sarah Bennett,</h3>
                                 <h4> Founder of Bennett's Bakery</h4>
                             </div>
                         </div>
-                        <p>"As a small business owner, I needed a website that could showcase my bakery's offerings and attract more local customers. [Web Design Agency] delivered beyond my expectations. They created a beautiful, easy-to-navigate site that truly captures the essence of my brand. Their attention to detail and understanding of my needs were impressive. My online orders have increased, and I couldn't be happier with the results!"</p>
+                        <p>"As a small business owner, I needed a website that could showcase my bakery's offerings and
+                            attract more local customers. [Web Design Agency] delivered beyond my expectations. They
+                            created a beautiful, easy-to-navigate site that truly captures the essence of my brand.
+                            Their attention to detail and understanding of my needs were impressive. My online orders
+                            have increased, and I couldn't be happier with the results!"</p>
                     </div>
                 </div>
             </div>
@@ -250,28 +219,28 @@
             <div class="process">
                 <div class="head">
                     <h2>Our <span>'4D'</span> Process</h2>
-                    <p>We believe that a well-defined process is key to delivering exceptional web design solutions. Our
+                    <p class="text">We believe that a well-defined process is key to delivering exceptional web design solutions. Our
                         process ensures that we understand your needs, create a tailored strategy, and execute it
                         flawlessly. Here’s how we do it:</p>
                 </div>
                 <div class="steps">
                     <div class="step">
-                        <video src="1695210411-ep-1.mp4" autoplay loop></video>
+                        <video src="assets/Discuss.mp4" muted autoplay loop></video>
                         <div class="overlay"></div>
                         <h3>Discuss</h3>
                     </div>
                     <div class="step">
-                        <video src="1695210411-ep-1.mp4" autoplay loop></video>
+                        <video src="assets/design.mp4" muted autoplay loop></video>
                         <div class="overlay"></div>
                         <h3>Design</h3>
                     </div>
                     <div class="step">
-                        <video src="1695210411-ep-1.mp4" autoplay loop></video>
+                        <video src="assets/develop.mp4" muted autoplay loop></video>
                         <div class="overlay"></div>
                         <h3>Develop</h3>
                     </div>
                     <div class="step">
-                        <video src="1695210411-ep-1.mp4" autoplay loop></video>
+                        <video src="assets/Deploy.mp4" muted autoplay loop></video>
                         <div class="overlay"></div>
                         <h3>Deploy</h3>
                     </div>
@@ -384,7 +353,7 @@
             <div class="CTA">
                 <h1>Lets start a Project <br> now</h1>
                 <form action="">
-                    <input type="email">
+                    <input type="email" placeholder="Email@address">
                     <button type="submit" class="Btn">
                         <p>Send me </p><svg xmlns="http://www.w3.org/2000/svg" width="24px" viewBox="0 0 32 32">
                             <path fill="currentColor"
@@ -394,6 +363,7 @@
                 </form>
             </div>
         </div>
+        <!-- navigation -->
         <nav class="navigator">
             <div class="nav-container">
                 <div class="links">
@@ -461,7 +431,34 @@
             </div>
         </div>
     </footer>
+
+
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <script>
+        const lenis = new Lenis()
+
+        lenis.on('scroll', (e) => {
+           
+        })
+
+        lenis.on('scroll', ScrollTrigger.update)
+
+        gsap.ticker.add((time) => {
+            lenis.raf(time * 1000)
+        })
+
+        gsap.ticker.lagSmoothing(0)
+    </script>
+    <script src="gsap.js"></script>
     <script src="script.js"></script>
+
 </body>
 
 </html>
