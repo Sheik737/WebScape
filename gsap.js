@@ -30,17 +30,17 @@ mm.add("(min-width:1200px)", () => {
         {
             scaleY: 0,
             opacity: 0,
-            x: -10,
+            y: 15,
         },
         {
             scaleY: 1,
             opacity: 1,
-            x: 0,
+            y: 0,
             stagger: 0.1,
             scrollTrigger: {
                 trigger: '.hero .text',
                 start: "top 95%",
-                end: "top 70%",
+                end: "top 50%",
                 scrub: true,
 
             }
@@ -52,17 +52,17 @@ mm.add("(min-width:1200px)", () => {
         {
             scaleY: 0,
             opacity: 0,
-            x: -10,
+            y: 15,
         },
         {
             scaleY: 1,
             opacity: 1,
-            x: 0,
+            y: 0,
             stagger: 0.1,
             scrollTrigger: {
                 trigger: '.about .text',
                 start: "top 95%",
-                end: "top 70%",
+                end: "top 50%",
                 scrub: true,
 
             }
@@ -74,17 +74,17 @@ mm.add("(min-width:1200px)", () => {
         {
             scaleY: 0,
             opacity: 0,
-            x: -10,
+            y: 15,
         },
         {
             scaleY: 1,
             opacity: 1,
-            x: 0,
+            y: 0,
             stagger: 0.1,
             scrollTrigger: {
                 trigger: '.testimonial-container .text',
                 start: "top 95%",
-                end: "top 70%",
+                end: "top 50%",
                 scrub: true,
 
             }
@@ -96,17 +96,17 @@ mm.add("(min-width:1200px)", () => {
         {
             scaleY: 0,
             opacity: 0,
-            x: -10,
+            y: 15,
         },
         {
             scaleY: 1,
             opacity: 1,
-            x: 0,
+            y: 0,
             stagger: 0.1,
             scrollTrigger: {
                 trigger: '.process .text',
                 start: "top 95%",
-                end: "top 70%",
+                end: "top 50%",
                 scrub: true,
 
             }
