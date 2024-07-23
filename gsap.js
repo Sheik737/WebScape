@@ -13,6 +13,19 @@ mm.add("(min-width:1200px)", () => {
 
 
 })
+let body = document.querySelector("body")
+let mouse = document.querySelector("#mouseeffect")
+let video = document.querySelectorAll('video')
+body.addEventListener('mousemove',(dets)=>{
+    gsap.to(mouse,{
+        display:'block',
+        x:dets.x+5,
+        y:dets.y+5,
+        duration:.5,
+        ease:'back.out'
+    })
+})
+
 // logo text animation 
 let logohead = new SplitType('.logo h2')
 let logoheadspan = new SplitType('.logo h2 span')

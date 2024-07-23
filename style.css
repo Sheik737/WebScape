@@ -10,7 +10,15 @@
     color: #ffffff;
 
 }
-
+#mouseeffect{
+    width: 24px;
+    height: 24px;
+    background-color: var(--primary-color);
+    border-radius: 50px;
+    position: fixed;
+    display: none;
+    z-index: 101;
+}
 .Btn {
     padding: 10px 20px;
     cursor: pointer;

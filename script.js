@@ -19,6 +19,7 @@ services.forEach(element => {
 steps.forEach(element => {
     element.addEventListener('mouseenter',()=>{
         element.childNodes[1].play()
+        
     })
     element.addEventListener('mouseleave',()=>{
         element.childNodes[1].pause()
