@@ -154,6 +154,18 @@ mm.add("(min-width:1200px)", () => {
             }
         },
     );
+    gsap.to('.CTA', 
+        {
+            width:"100%",
+            height:"100vh",
+            scrollTrigger: {
+                trigger: '.CTA-section',
+                start: "top 60%",
+                end: "top 0%",
+                scrub: true,
+
+            }
+        },)
     // logo hover animation 
     let logo = document.querySelector('header .logo')
     logo.addEventListener('mouseenter', () => {
@@ -236,8 +248,8 @@ mm.add("(min-width:1200px)", () => {
     body.addEventListener('mousemove', (dets) => {
         gsap.to(mouse, {
             display: 'block',
-            x: dets.x+3,
-            y: dets.y+3,
+            x: dets.x + 3,
+            y: dets.y + 3,
             duration: .5,
             ease: 'back.out'
         })
