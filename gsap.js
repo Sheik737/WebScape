@@ -160,7 +160,7 @@ mm.add("(min-width:1200px)", () => {
             height:"100vh",
             scrollTrigger: {
                 trigger: '.CTA-section',
-                start: "top 60%",
+                start: "top 45%",
                 end: "top 0%",
                 scrub: true,
 
