@@ -18,7 +18,7 @@
     border-radius: 50px;
     position: fixed;
     display: none;
-    z-index: 99;
+    z-index: 100;
 }
 #mouseeffect p{
     font-size: clamp(4px,1vw,8px);
@@ -140,6 +140,7 @@ body {
     position: fixed;
     top: 2%;
     z-index: 100;
+    transition: .3s ease;
 }
 
 #header .head {
@@ -174,7 +175,7 @@ body {
     position: sticky;
     bottom: 3%;
     width: 100%;
-    z-index: 99;
+    z-index: 100;
 }
 
 .nav-container {
@@ -193,9 +194,9 @@ body {
 .nav-container .links a {
     color: var(--white);
     text-decoration: none;
-    font-size: clamp(1rem, 1.2vw, 1.4rem);
+    font-size: clamp(1rem, 1.1vw, 1.4rem);
     transition: .4s ease;
-    padding: 16px;
+    padding: 12px;
     border-radius: 12px;
     border: 2px solid #d8d2c2;
     background-color: var(--black);
@@ -547,7 +548,7 @@ body {
 }
 
 .process .steps .step {
-    border-top: 3px solid black;
+    border-top: 2px solid black;
     display: grid;
     height: 120px;
     overflow: hidden;
@@ -581,7 +582,7 @@ body {
 }
 
 .process .steps .step:last-child {
-    border-bottom: 3px solid black;
+    border-bottom: 2px solid black;
 }
 
 /* FAQ  */

@@ -1,5 +1,6 @@
 const hamMenu = document.querySelector(".ham-menu");
 const menuContainer = document.querySelector('.nav-container')
+const header = document.querySelector('header')
 const Menu = document.querySelector(".links");
 const link = document.querySelectorAll(".link");
 const ansMenu = document.querySelectorAll('.answerToggle')
@@ -7,6 +8,18 @@ const sections = document.querySelectorAll('.section');
 const navLinks = document.querySelectorAll('.nav-container .link');
 const services = document.querySelectorAll('.service')
 const steps = document.querySelectorAll('.step')
+let lastScrollY = window.scrollY;
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > lastScrollY) {
+        header.style.top = '-5%'; // Adjust as per your navbar height
+        header.style.opacity = 0
+    } else {
+        header.style.top = '2%';
+        header.style.opacity = 1
+    }
+    lastScrollY = window.scrollY;
+});
 
 services.forEach(element => {
     element.addEventListener('mouseenter',()=>{

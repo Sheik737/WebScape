@@ -154,6 +154,7 @@ mm.add("(min-width:1200px)", () => {
             }
         },
     );
+
     gsap.to('.CTA', 
         {
             width:"100%",
