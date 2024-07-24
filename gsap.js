@@ -112,59 +112,8 @@ mm.add("(min-width:1200px)", () => {
             }
         },
     );
-
-
-})
-let logo = document.querySelector('header .logo')
-logo.addEventListener('mouseenter', () => {
-    gsap.to('.logo h2 .char', {
-        opacity: 1,
-        x: 0,
-    })
-    gsap.to('.logo h2 span .char', {
-        opacity: 1,
-        x: 0,
-    })
-
-})
-logo.addEventListener('mouseleave', () => {
-    gsap.to('.logo h2 .char', {
-        opacity: 0,
-        x: -10,
-    })
-    gsap.to('.logo h2 span .char', {
-        opacity: 0,
-        x: -10,
-    })
-})
-let body = document.querySelector("body")
-let mouse = document.querySelector("#mouseeffect")
-let video = document.querySelectorAll('video')
-body.addEventListener('mousemove', (dets) => {
-    gsap.to(mouse, {
-        display: 'block',
-        x: dets.x + 8,
-        y: dets.y + 8,
-        duration: .5,
-        ease: 'back.out'
-    })
-})
-
-// logo text animation 
-
-let logohead = new SplitType('.logo h2')
-let logoheadspan = new SplitType('.logo h2 span')
-window.addEventListener("scroll", () => {
-    if (scrollY >= 10) {
-        gsap.to('.logo h2 .char', {
-            opacity: 0,
-            x: -10,
-        })
-        gsap.to('.logo h2 span .char', {
-            opacity: 0,
-            x: -10,
-        })
-    } else {
+    let logo = document.querySelector('header .logo')
+    logo.addEventListener('mouseenter', () => {
         gsap.to('.logo h2 .char', {
             opacity: 1,
             x: 0,
@@ -173,7 +122,111 @@ window.addEventListener("scroll", () => {
             opacity: 1,
             x: 0,
         })
-    }
-})
 
+    })
+    logo.addEventListener('mouseleave', () => {
+        gsap.to('.logo h2 .char', {
+            opacity: 0,
+            x: -10,
+        })
+        gsap.to('.logo h2 span .char', {
+            opacity: 0,
+            x: -10,
+        })
+    })
+    let body = document.querySelector("body")
+    let mouse = document.querySelector("#mouseeffect")
+    let services = document.querySelectorAll('.service')
+    let steps = document.querySelectorAll('.step')
+    let herovideo = document.querySelector('.herovideo')
+    herovideo.addEventListener('mouseenter', () => {
+        gsap.to(mouse, {
+            scale: 2.2,
+            padding: "12px"
+        })
+        mouse.innerHTML = '<p>Play Reel</p>'
+    })
+    herovideo.addEventListener('mouseleave', () => {
+        gsap.to(mouse, {
+            scale: 1,
+            padding: "0px"
+
+        })
+        mouse.innerHTML = ''
+    })
+    mouse.style.padding = '0px'
+    services.forEach(e => {
+        e.addEventListener('mouseenter', () => {
+            gsap.to(mouse, {
+                scale: 2.2,
+                padding: "12px"
+            })
+            mouse.innerHTML = '<p>View More</p>'
+        })
+        e.addEventListener('mouseleave', () => {
+            gsap.to(mouse, {
+                scale: 1,
+                padding: "0px"
+
+            })
+            mouse.innerHTML = ''
+        })
+    })
+    steps.forEach(e => {
+        e.addEventListener('mouseenter', () => {
+            gsap.to(mouse, {
+                scale: 2.2,
+                padding: "12px"
+            })
+            mouse.innerHTML = '<p>View More</p>'
+        })
+        e.addEventListener('mouseleave', () => {
+            gsap.to(mouse, {
+                scale: 1,
+                padding: "0px"
+
+            })
+            mouse.innerHTML = ''
+        })
+    })
+    body.addEventListener('mousemove', (dets) => {
+        gsap.to(mouse, {
+            display: 'block',
+            x: dets.x+3,
+            y: dets.y+3,
+            duration: .5,
+            ease: 'back.out'
+        })
+    })
+
+    // logo text animation 
+
+    new SplitType('.logo h2')
+    new SplitType('.logo h2 span')
+    window.addEventListener("scroll", () => {
+        if (scrollY >= 10) {
+            gsap.to('.logo h2 .char', {
+                opacity: 0,
+                x: -10,
+            })
+            gsap.to('.logo h2 span .char', {
+                opacity: 0,
+                x: -10,
+            })
+        } else {
+            gsap.to('.logo h2 .char', {
+                opacity: 1,
+                x: 0,
+            })
+            gsap.to('.logo h2 span .char', {
+                opacity: 1,
+                x: 0,
+            })
+        }
+    })
+
+
+
+
+})
 
