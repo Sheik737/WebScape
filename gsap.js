@@ -47,6 +47,27 @@ mm.add("(min-width:1200px)", () => {
         },
     );
     // about section on view animation
+    new SplitType('.about h2')
+    gsap.fromTo(".about h2 .char",
+        {
+            scaleY: 0,
+            opacity: 0,
+            y: 15,
+        },
+        {
+            scaleY: 1,
+            opacity: 1,
+            y: 0,
+            stagger: 0.1,
+            scrollTrigger: {
+                trigger: '.about h2',
+                start: "top 95%",
+                end: "top 50%",
+                scrub: true,
+
+            }
+        },
+    );
     new SplitType('.about .text')
     gsap.fromTo(".about .text .char",
         {
@@ -69,8 +90,8 @@ mm.add("(min-width:1200px)", () => {
         },
     );
     // testimmonial section on view animation
-    new SplitType('.testimonial-container .text')
-    gsap.fromTo(".testimonial-container .text .char",
+    new SplitType('.service-section h2')
+    gsap.fromTo(".service-section h2 .char",
         {
             scaleY: 0,
             opacity: 0,
@@ -82,7 +103,7 @@ mm.add("(min-width:1200px)", () => {
             y: 0,
             stagger: 0.1,
             scrollTrigger: {
-                trigger: '.testimonial-container .text',
+                trigger: '.service-section h2',
                 start: "top 95%",
                 end: "top 50%",
                 scrub: true,
@@ -91,6 +112,27 @@ mm.add("(min-width:1200px)", () => {
         },
     );
     //process section on view animation
+    new SplitType('.process h2')
+    gsap.fromTo(".process h2 .char",
+        {
+            scaleY: 0,
+            opacity: 0,
+            y: 15,
+        },
+        {
+            scaleY: 1,
+            opacity: 1,
+            y: 0,
+            stagger: 0.1,
+            scrollTrigger: {
+                trigger: '.process h2',
+                start: "top 95%",
+                end: "top 50%",
+                scrub: true,
+
+            }
+        },
+    );
     new SplitType('.process .text')
     gsap.fromTo(".process .text .char",
         {
@@ -112,6 +154,7 @@ mm.add("(min-width:1200px)", () => {
             }
         },
     );
+    // logo hover animation 
     let logo = document.querySelector('header .logo')
     logo.addEventListener('mouseenter', () => {
         gsap.to('.logo h2 .char', {
@@ -134,6 +177,7 @@ mm.add("(min-width:1200px)", () => {
             x: -10,
         })
     })
+    // variable for effect 
     let body = document.querySelector("body")
     let mouse = document.querySelector("#mouseeffect")
     let services = document.querySelectorAll('.service')
