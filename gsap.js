@@ -157,8 +157,8 @@ mm.add("(min-width:1200px)", () => {
 
     gsap.to('.CTA', 
         {
-            width:"100%",
-            height:"100vh",
+            width:"90%",
+            height:"70vh",
             scrollTrigger: {
                 trigger: '.CTA-section',
                 start: "top 45%",
