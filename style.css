@@ -10,7 +10,6 @@
     color: #ffffff;
 
 }
-
 #mouseeffect{
     width: 24px;
     height: 24px;
@@ -194,7 +193,7 @@ body {
 .nav-container .links a {
     color: var(--white);
     text-decoration: none;
-    font-size: clamp(1rem, 1.1vw, 1.4rem);
+    font-size: clamp(1rem, 1.3vw, 1.4rem);
     transition: .4s ease;
     padding: 12px;
     border-radius: 8px;

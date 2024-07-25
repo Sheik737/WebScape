@@ -181,14 +181,25 @@ mm.add("(min-width:1200px)", () => {
 
     })
     logo.addEventListener('mouseleave', () => {
-        gsap.to('.logo h2 .char', {
-            opacity: 0,
-            x: -10,
-        })
-        gsap.to('.logo h2 span .char', {
-            opacity: 0,
-            x: -10,
-        })
+        if (scrollY >= 10) {
+            gsap.to('.logo h2 .char', {
+                opacity: 0,
+                x: -10,
+            })
+            gsap.to('.logo h2 span .char', {
+                opacity: 0,
+                x: -10,
+            })
+        } else {
+            gsap.to('.logo h2 .char', {
+                opacity: 1,
+                x: 0,
+            })
+            gsap.to('.logo h2 span .char', {
+                opacity: 1,
+                x: 0,
+            })
+        }
     })
     // variable for effect 
     let body = document.querySelector("body")
