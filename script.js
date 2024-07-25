@@ -10,16 +10,7 @@ const services = document.querySelectorAll('.service')
 const steps = document.querySelectorAll('.step')
 let lastScrollY = window.scrollY;
 
-window.addEventListener('scroll', () => {
-    if (window.scrollY > lastScrollY) {
-        header.style.top = '-5%'; // Adjust as per your navbar height
-        header.style.opacity = 0
-    } else {
-        header.style.top = '2%';
-        header.style.opacity = 1
-    }
-    lastScrollY = window.scrollY;
-});
+
 
 services.forEach(element => {
     element.addEventListener('mouseenter',()=>{
