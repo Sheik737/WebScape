@@ -10,7 +10,7 @@ const services = document.querySelectorAll('.service')
 const steps = document.querySelectorAll('.step')
 let lastScrollY = window.scrollY;
 
-
+let b = 4
 services.forEach(element => {
     element.addEventListener('mouseenter',()=>{
         element.childNodes[1].play()
