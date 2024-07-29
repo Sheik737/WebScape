@@ -11,7 +11,6 @@ const steps = document.querySelectorAll('.step')
 let lastScrollY = window.scrollY;
 
 
-
 services.forEach(element => {
     element.addEventListener('mouseenter',()=>{
         element.childNodes[1].play()
